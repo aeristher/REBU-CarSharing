@@ -92,7 +92,7 @@ namespace REBU_carSharing_System
 
 
             MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("pittcist@gmail.com");
+            mail.From = new MailAddress("your_email_address_here");
             mail.To.Add(new MailAddress(strEmail));
             mail.Subject = "Welcome to REBU";
             mail.Body = "Congratulations, " + strUser + "!!!" + "\n" +
@@ -116,7 +116,7 @@ namespace REBU_carSharing_System
             smtp.EnableSsl = true;
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new NetworkCredential("pittcist@gmail.com", "pittcist0265");
+            smtp.Credentials = new NetworkCredential("your_email_here", "your_password_here");
 
             try
             {
